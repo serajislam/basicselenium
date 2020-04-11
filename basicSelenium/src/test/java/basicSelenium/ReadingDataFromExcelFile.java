@@ -1,13 +1,10 @@
 package basicSelenium;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
@@ -62,6 +59,7 @@ public class ReadingDataFromExcelFile {
 	{
 		FileInputStream fis = new FileInputStream(".\\\\Data\\\\credentials.xls");
 		HSSFWorkbook wb = new HSSFWorkbook(fis);
+	
 		HSSFSheet sh = wb.getSheet("credentials");
 		Iterator<Row> it = sh.iterator();
 		it.next();
