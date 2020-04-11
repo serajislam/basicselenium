@@ -20,7 +20,7 @@ public class GettingAllLink {
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		driver.get("http://www.ebay.com");
+		driver.get("http://www.facebook.com");
 
 		//Capturing All links 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
